@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bakytnur Ernat – IITU student, aspiring cybersecurity specialist">
+<title>Bakytnur Ernat – IITU Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --brand:#1d4ed8; --brand-ink:#fff; --dark:#0b1b3a; }
+  @media (prefers-color-scheme:dark){ :root { --bg:#0b1220; --card:#111a2e; --ink:#e5e9f2; --muted:#94a3b8; --line:#1f2a44; --brand:#60a5fa; --brand-ink:#0b1220; --dark:#060d1c; } }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:4.5rem; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,Arial,sans-serif; line-height:1.6; }
+  a { color:var(--brand); }
+  .container { max-width:62rem; margin:0 auto; padding:0 1.25rem; }
+  nav { position:sticky; top:0; z-index:10; background:var(--card); border-bottom:1px solid var(--line); }
+  nav .container { display:flex; justify-content:space-between; align-items:center; gap:1rem; height:3.5rem; }
+  .logo { font-weight:700; text-decoration:none; color:var(--ink); }
+  nav ul { display:flex; gap:1.2rem; list-style:none; margin:0; padding:0; font-size:.95rem; }
+  nav ul a { color:var(--muted); text-decoration:none; font-weight:500; }
+  nav ul a:hover { color:var(--brand); }
+  @media (max-width:36rem){ nav ul { gap:.8rem; font-size:.85rem; } .logo { display:none; } }
+  .hero { background:var(--dark); color:#fff; }
+  .hero .container { display:grid; gap:2rem; align-items:center; padding-top:3.5rem; padding-bottom:3.5rem; }
+  @media (min-width:44rem){ .hero .container { grid-template-columns:1.5fr 1fr; } }
+  .badge { display:inline-block; font-size:.8rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:#93c5fd; border:1px solid #1e3a8a; padding:.25rem .7rem; border-radius:999px; }
+  h1 { font-size:clamp(2.2rem,6vw,3.4rem); line-height:1.1; margin:1rem 0 .6rem; letter-spacing:-.02em; }
+  .lead { color:#cbd5e1; max-width:34rem; margin:0 0 1.5rem; }
+  .btns { display:flex; flex-wrap:wrap; gap:.7rem; }
+  .btn { display:inline-block; padding:.7rem 1.3rem; border-radius:.5rem; font-weight:600; text-decoration:none; background:#3b82f6; color:#fff; }
+  .btn.ghost { background:transparent; border:1px solid #475569; color:#fff; }
+  .btn:hover { filter:brightness(1.1); }
+  .photo { justify-self:center; width:min(15rem,70%); }
+  .photo img { width:100%; aspect-ratio:1; object-fit:cover; object-position:center 55%; border-radius:1rem; border:4px solid #1e3a8a; display:block; background:#1e293b; }
+  section { padding:3rem 0 .5rem; }
+  h2 { font-size:1.6rem; margin:0 0 1.2rem; letter-spacing:-.01em; }
+  h2::after { content:""; display:block; width:2.5rem; height:3px; background:var(--brand); margin-top:.4rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1.2rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:.75rem; padding:1.3rem; }
+  .card h3 { margin:0 0 .4rem; font-size:1.1rem; }
+  .card p { margin:0; color:var(--muted); }
+  .facts { list-style:none; margin:0; padding:0; display:grid; gap:.6rem; }
+  .facts li { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:.5rem; padding:.7rem 1rem; }
+  .about p { max-width:42rem; color:var(--muted); margin:0 0 1rem; }
+  .contact { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
+  footer { margin-top:3rem; padding:1.5rem 0; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+  a:focus-visible, .btn:focus-visible { outline:3px solid var(--brand); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a class="logo" href="#top">Bakytnur Ernat</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div>
+      <span class="badge">IITU · First-year student</span>
+      <h1>Bakytnur Ernat</h1>
+      <p class="lead">Student at the International IT University (IITU), Almaty. I am building my skills in IT and aiming for a career in cybersecurity.</p>
+      <div class="btns">
+        <a class="btn" href="#contact">Contact me</a>
+        <a class="btn ghost" href="#about">About me</a>
+      </div>
+    </div>
+    <div class="photo"><img src="photo.jpeg" alt="Bakytnur Ernat"></div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>I started my studies at IITU in September 2026 after finishing school. I come from Saryozek and I am curious about technology, computers and how digital systems stay secure.</p>
+    <ul class="facts">
+      <li>Hometown: Saryozek</li>
+      <li>University: International IT University (IITU)</li>
+      <li>Favourite food: kazy</li>
+      <li>Fear: snakes</li>
+    </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Interests</h2>
+    <div class="grid">
+      <div class="card"><h3>Music</h3><p>I listen to Sadraddin every day and I play the dombyra.</p></div>
+      <div class="card"><h3>Games</h3><p>My favourite game is CS2 – it trains teamwork and quick decisions.</p></div>
+      <div class="card"><h3>Technology</h3><p>I enjoy coding and studying how websites are built.</p></div>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>Goals</h2>
+    <div class="grid">
+      <div class="card"><h3>Career</h3><p>To become a cybersecurity specialist.</p></div>
+      <div class="card"><h3>Travel</h3><p>To visit Barcelona.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card"><h3>Email</h3><p><a href="mailto:52373@iitu.edu.kz">52373@iitu.edu.kz</a></p></div>
+      <div class="card"><h3>Instagram</h3><p><a href="https://instagram.com/bakytnuruly.08" target="_blank" rel="noopener">@bakytnuruly.08</a></p></div>
+      <div class="card"><h3>Telegram</h3><p><a href="https://t.me/bakytnuruly08" target="_blank" rel="noopener">@bakytnuruly08</a></p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">&copy; 2026 Bakytnur Ernat · IITU</div>
+</footer>
+
+</body>
+</html>
